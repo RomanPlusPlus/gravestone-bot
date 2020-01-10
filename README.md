@@ -14,7 +14,9 @@ It should work as follows:
 4. If you ask the Bot some question, it should provide an answer that is authentic to the historical person.
 
 At the current stage of development, Gravestone Bot is nothing but a search engine that finds text fragments most relevant to the user’s question. 
-We plan to iteratively expand the Bot’s capabilities, to make the conversation more natural and more authentic. 
+We plan to iteratively expand the Bot’s capabilities, to make the conversation more natural and more authentic.
+
+This software and the sample texts are under very permissive Creative Commons Zero v1.0 Universal licence (basically, it describes a release into the Public Domain). 
 
 ## 1. How to use it 
 ### 1.0. Running the bot with sample texts
