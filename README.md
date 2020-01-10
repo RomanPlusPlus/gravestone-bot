@@ -17,7 +17,7 @@ At the current stage of development, Gravestone Bot is nothing but a search engi
 We plan to iteratively expand the Bot’s capabilities, to make the conversation more natural and more authentic. 
 
 ## 1. How to use it 
-### 2. Running the bot with sample texts
+### 1.0. Running the bot with sample texts
 
 Linux:
 
@@ -29,7 +29,7 @@ Linux:
 
 The bot was tested on Ubuntu 16.04 and Python 3.7.3. 
 
-### 3. Creating a bot with your texts
+### 1.1. Creating a bot with your texts
 
 0. convert your texts to .txt. Currently only English language is supported.  
 1. ensure that the encoding is UTF-8
@@ -37,6 +37,7 @@ The bot was tested on Ubuntu 16.04 and Python 3.7.3.
 3. Backup the `input_texts` folder to a safe place 
 4. Delete the `input_texts` contents
 5. paste your texts into it
-6. Launch the bot
+6. if necessary, obfuscate the texts using `schuffler.py`
+7. Launch the bot
 
 The more texts you feed to the bot, the better will be the quality of the answers. 
