@@ -23,6 +23,20 @@ Linux:
 
 0. Click "Clone or Download" > "Download ZIP"
 1. Unpack the zip
-2. cd to the unpacked dir
+2. cd to the unpacked folder
 3. launch it: `python3 launcher.py`
 4. Ask some question and press Enter
+
+The bot was tested on Ubuntu 16.04 and Python 3.7.3. 
+
+### 3. Creating a bot with your texts
+
+0. convert your texts to .txt. Currently only English language is supported.  
+1. ensure that the encoding is UTF-8
+2. Navigate to the Gravestone Bot folder
+3. Backup the `input_texts` folder to a safe place 
+4. Delete the `input_texts` contents
+5. paste your texts into it
+6. Launch the bot
+
+The more texts you feed to the bot, the better will be the quality of the answers. 
