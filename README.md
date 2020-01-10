@@ -33,7 +33,7 @@ The bot was tested on Ubuntu 16.04 and Python 3.7.3.
 
 ### 1.1. Creating a bot with your texts
 
-0. convert your texts to .txt. Currently only English language is supported.  
+0. convert your texts to .txt. The bot is tailored to English language, but other languages may work too.  
 1. ensure that the encoding is UTF-8
 2. Navigate to the Gravestone Bot folder
 3. Backup the `input_texts` folder to a safe place 
