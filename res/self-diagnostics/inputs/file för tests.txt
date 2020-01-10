@@ -1,0 +1,2 @@
+This file is used for self-diagnostic purposes.
+Dont delete, rename or modify test files.

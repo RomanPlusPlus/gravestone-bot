@@ -1,0 +1,595 @@
+The human mind is nothing but a software. And if you have enough information about some lost piece of software, you can re-build it.
+The most interesting are the "how we can do it" questions, not the "why" questions. For example:
+How do we resurrect historical personalities using science and technology?
+How do we preserve enough information about our beloved ones and ourselves?
+What are hardware requirements to emulate a human mind?
+What are some tech projects that may be helpful for our cause?
+What are some information-theoretic limitations?
+Which historical personalities are the easiest to resurrect?
+How do we simulate historical environments?
+Occasional, well-done "why?" research is ok too, but it should not be our main focus.
+
+Or course, "p-zombies" and other bad philosophy arguments can be safely ignored. We’re scientists and engineers, not windbags.
+
+Some related topics: digital immortality, transhumanism, cryonics, Quantified Self, Lifelogging.
+
+
+Imagine that we can fully describe any given human mind with N variables. The list of variables could include political views, food preferences, favorite books, childhood memories, love interests etc etc. There could billions of such variables. 
+If we know the values of all N variables for some particular person, we could perfectly recreate the person's mind. 
+Imagine that we could estimate the values with some precision. For example, if we know that the person was a vocal supporter of cryonics, we could assign the value "cryonicist" to the corresponding variable. 
+The more data we have about a deceased person, the more of the person's mind we could reconstruct. And if some data is missing, we can create many alternative versions of the reconstructed mind, and run them in parallel, ensuring that at least one of them is close enough to the original person. 
+It's one of the reasons why any cryonics is better than no cryonics: it preserves at least some data that we can later use for the digital reconstruction of the patient's mind. 
+ 
+If the assumption that the human mind can be run on a finite ANN is correct, then we must conclude that the set of all possible human minds is finite. 
+The set is vast: at least 2^10^11 possible minds (the estimate is based on the fact that there are 10^11 synapses, each of them can have at least 2 possible weights). But it is finite. 
+Thus, given enough computational resources, we can reconstruct every living or dead mind by a brute-force search through the set of all possible minds. 
+The problem is, to complete such search, you'll likely need to convert the entire galaxy into computronium, and run it for trillions of years. 
+Every bit of information about the patient's mind will reduce the search space roughly in half. 1 petabyte of mindfile could reduce it by a factor of 2^53. 
+And if we have enough data on the inner workings of the patient's brain (e.g. by the means of high-quality cryopreservation), the search space could be reduced to a manageable size. 
+To conclude, I would say that Brian Wowk is both right and wrong. Producing sufficiently detailed I/O data could be indeed unachievable. But maybe a few petabytes will be enough. Especially if we utilize something better than brute-force. 
+ 
+Isaac Asimov is one of the few cremated people in the world who actually has a chance of living forever. 
+He wrote almost 500 books in his lifetime. There is only a very limited set of neural network configurations that could produce the same output. Thus, given enough computational resources, we could find an artificial neural network that could produce a mind in the likeness of Isaac Asimov. 
+As long as two minds produce the same output, there is no practical difference between them. Two identical copies of software are the same software. 
+Thus, the reconstructed mind will be the same Isaac Asimov. 
+If we bring him back to life, and show him the world of the future, will he keep his deathist views? There is only one way to find out.
+
+I think the first resurrected historical figure should be Nikolai_Fyodorov, a late 19th century Christian philosopher who proposed the idea of technological resurrection.
+A good friend of Leo Tolstoy, Fedorov argued that the struggle against death can become the most natural cause uniting all people of Earth, regardless of their nationality, race, citizenship or wealth. He thought that death should become the subject of comprehensive scientific inquiry, that achieving physical immortality and revival is the greatest goal of science and the greatest goal of Christendom.
+
+
+is whole brain emulation _necessary_ for mind uploading? Could a far simpler model be sufficient to simulate the human mind of a particular person? Both AlphaZero and AlphaStar are orders-of-magnitude smaller than the human brain, yet outperform humans at some highly complex cognitive tasks. Maybe it’s possible to build a similarly small AI that could imitate a particular person with enough precision.
+
+Image you're an alien who has never encountered a human brain before. Your goal is to reverse-engineer it. The problem is, it's essentially a blackbox device. The creator has left no documentation, and the code is obfuscated to hell.
+Some facts that you've managed to learn about it:
+it's a recurrent neural network
+it's huge: about 10^11 neurons and about 10^14 weights
+it takes 8K Ultra HD video (60 fps) as the input, and generates text as the output (500 bytes per second on average)
+it can do some image recognition and natural language processing, among other things
+
+You have the following experimental setup:
+the network is functioning about 16 hours per day
+You can give it specific inputs and observe the outputs
+You can record the inputs and outputs (and already collected several years of it)
+
+Assuming that you have Google-scale computational resources, is it theoretically possible to successfully reverse-engineer the brain? (meaning, we can create network that will produce similar outputs giving the same inputs)
+How many years of the input/output records do we need to do it?
+
+Let's assume we record everything that a particular human has seen and everything that he said and wrote, for 60 years
+we then teach a massive ANN using the corresponding inputs and outputs
+how much the output of such ANN will resemble the output of the human?
+that if we use the data not from one human, but from millions?   
+
+
+Why should we bring all people ever lived back to life?
+Bringing a dead person back to life is morally equal to saving someone in danger. And there is no reason to discuss the importance of saving someone in danger.
+
+The “how” question is far more interesting.
+So far, I’ve heard about 4 possible methods to bring all people ever lived back to life, using science and technology.
+Of course, all of them are highly speculative. And their feasibility is vastly less realistic that the feasibility of cryonics.
+
+Speculative method #1. Generate all possible human minds.
+
+The set of all possible human minds is finite (e.g. the Bekenstein Bound)
+Thus, given enough computational resources, it's possible to generate a list of all possible human minds (in the same sense, as it's possible to generate a list of all 3-digits binary numbers)
+If two human minds are identical, then it's one and the same mind (in the same sense, as two identical binary numbers are the same number)
+Thus, the list of generated minds will include the minds of all dead humans.
+
+Speculative method #2. Collect the crumbs.
+Every human is constantly scattering crumbs of information about them – from ideas to skin cells. Some humans are also leaving more long-lasting traces – from children to books to bones.
+A superhuman AI may be able to collect all the crumbs of information still preserved, and create realistic reconstructions of the minds that scattered them.
+
+Speculative method #3. Find a way to get arbitrary information from the distant past.
+It seems that idea of time travel to the past contradicts the laws of physics (as we know them).
+But there is no such law that prohibits us from copying some information from the past.
+In fact, we constantly receive information from the past, e.g. by observing the light of the stars long gone.
+Maybe there is a way to build a device that could show us the Battle of Waterloo, or any other historical event, exactly as it has happened, with the same fidelity as a modern digital camera.
+If such device is possible, maybe copying minds from the distant past is possible too.
+
+Speculative method #4. Create a realistic simulation of the Universe.
+If the simulation is detailed enough, and if we repeat it with all kinds of initial conditions, one of the runs could recapitulate the events that have happened in our Universe, including the lives of all humans ever lived.
+
+There are many ways how these ideas could break. The underlying theoretical assumptions could be wrong; there could be not enough computational resources in the entire Universe to implement them; and other possible problems.
+But it’s a worthy goal to bring all people ever lived back to life.
+If you manage to live past your 10000th birthday, you'll definitely have enough time to dive into this project, and prove it unrealizable (or maybe indeed realizable).
+
+
+
+Yes, doctors today routinely resurrect clinically dead patients. Unfortunately, it’s currently impossible to bring back to life someone who was dead for many decades or centuries.
+Maybe in a distant future we’ll be capable of such a feat.
+The process of technological resurrection may look like this:
+   1. Collect all available data about the historical person: DNA, memoirs, historical descriptions, the cryopreserved brain etc. Everything we can find.
+   2. Create a very detailed virtual reconstruction of the historical period.
+   3. Create an artificial general intelligence with the personality compatible with the personal and historical data.
+   4. If the differences between the recreated personality and the historical personality are small, then we assume that it’s the same person.
+   5. We resurrected a historical person.
+One may argue that it’s “just a copy” of a historical person. But using the very same arguments one may argue that you are “just a copy” of yourself from yesterday.
+
+
+
+------------------------
+
+Is whole brain emulation necessary for mind uploading?
+
+Friend, you're made of atoms, not magic.
+You're an implementation of an algorithm, and there's no reason to believe that that the algorithm absolutely cannot be extracted and abstracted. Or that there isn't a better algo to run. - Ratheka Stormbjorne (Ratheka Stormbjorne 2019, personal communication, 13 April)
+
+Hans Driesch, a renowned biologist of the late 19th century, was a convinced vitalist. He firmly believed that the functioning of a living organism cannot be explained by physico-chemical processes. He argued that life is not a “machine”, but a vessel for some non-material, mystical force. PROOF2
+
+https://de.wikipedia.org/wiki/Hans_Driesch
+
+William Thomson, a reputable mathematical physicist and engineer of the late 19th century, argued that “no aeroplane will ever be practically successful”3
+
+https://zapatopi.net/kelvin/papers/interview_aeronautics_and_wireless.html
+
+Driesch and Thomson were proven wrong in the same way: by a practical demonstration (Mycoplasma laboratorium4
+
+If we ignore synthetic (bio)viruses and digital life forms, then Mycoplasma laboratorium is the first life birthed by a machine. See [Glass et al, 2005][Gibson et al, 2010] for a detailed description.
+
+and the Wright Flyer, respectively).
+
+There are two major objections to mind uploading (there are other objections too, but most of them were either refuted or proven to be irrelevant. For a review, see [Goertzel, Ford, 2013][Sandberg, 2013][Hayworth, 2015]):
+
+1) the human brain is not a “machine”, but a vessel for some non-material, mystical force
+
+2) the task is too difficult to ever be practically successful
+
+As with Driesch and Thomson, the best way to prove them wrong is a practical demonstration.
+
+The science and technology of the early 21st century are not yet advanced far enough to produce such demonstration. But there are several approaches that could bring us closer to it.
+
+We classify the main approaches to mind uploading as follows:
+
+“Direct uploading”: scanning the structure and/or the activity of the patient’s brain, and recreating it on an artificial substrate
+
+“Theseus uploading”: gradually replacing the neurons of the patient’s brain with digital elements of the same functionality6
+
+The neuroprosthetics research could play the core role in developing it
+
+“Jan uploading”: extending the patient’s brain with external computational resources in such a manner, as to keep the whole system conscious even after the death of the biological part. (Named in the honor of Jan Korchmaryuk. He was the first researcher who have described the approach in detail)
+
+
+Let's focus on a lesser known approach:
+“Lifelog uploading”: mind uploading by training an AI on the patient’s life-logging data.
+
+The approach could be summarized as follows:
+1. collect and digitize all available data about the patient’s mind (from his diaries to his GPS tracks)
+2. train a suitable AI on the data, with the goal of mimicking the patient’s mind as much as possible
+3. collect more data and train better AIs till it’s practically indistinguishable from the patient’s mind
+
+Lifelogging definition
+
+The usual approach was to collect the lifelogging data and to wait for AGI to reconstruct the mind from it.
+
+As of 2018, there has been no successful (publicly known) attempt to create a machine in the likeness of the human mind. Taking into account some reasonable predictions regarding the emergence of AGI (Artificial general intelligence), we assume that it will not be created in the next 15 years.
+
+We propose to not to wait for the emergence of AGI, but start creating.
+
+We claim no primacy in devising this approach, as similar ideas have been circulating among mind uploading researchers for decades (Among them: Allexey Potapov, Danila Medvedev, Igor Trapeznikov, Jan Korchmaryuk, Martine Rothblatt, Valeria Pride, Walter Simons, and others.)
+
+An early description of this approach to mind uploading can be found in [Miller, 1951]. There are also similar ideas in [Fedorov, 1906].
+
+
+2. Our assumptions
+
+No airplane and no synthetic lifeform have ever been created by following a philosophy of idealism. If our goal is to devise a practical approach to mind uploading, we should take the materialist position in the philosophy of mind.
+We assume the following:
+
+1. The human brain is an information processing system, and the mind is one of its products (Spinal cord, peripheral nervous system, immune system or even gut flora could also play a role. But it’s not relevant for the lifelog approach).
+2. Regardless of how the human brain is functioning, it’s possible to build a machine with the same functionality. 
+It’s likely to be true even if quantum processes (or some yet undiscovered physical phenomena) play the main role in the brain’s functioning. The best support for this conclusion is the humble origin of the human brain. If a few strands of DNA and some molecular machinery can produce the computational device of the human brain, then it's reasonable to expect that the scientific method can produce a device of the same abilities. Compare: the biological evolution has been perfecting photosynthesis for more than a billion years. Yet our solar cells are already more efficient in capturing the solar energy, after only a few centuries of scientific progress. PROOF
+3. There is no need to fully understand the human mind to be able to replicate it. Compare: we don’t fully understand the human vision, yet we build AIs that perform some vision tasks (like image classification) better than humans.
+4. it’s possible to create a sufficiently accurate digital replica of a human mind (The fact that AIs can already replicate many abilities of the human brain, is a strong indication that this assumption is realistic)
+5. For all practical purposes, such replica is the same human mind (at least, immediately after its creation). In the case of direct uploading, it’s trivial to prove. 
+6. To build it, there is no need to create an accurate biophysical model of the human brain with all its superfluous Darwinian complexity; building a functionally equivalent AI is enough. As [Stross, 1993] formulated it: “...nerve cells are complex switches: components in a biological switching network that can be simulated by a program. And as Turing observed, any program that can be run on a given computer can be run on any other computer, given enough memory or time for the process.”
+7. Alder's razor: what cannot be settled by experiment is not worth debating: (https://philosophynow.org/issues/46/Newtons_Flaming_Laser_Sword). This includes the existence of qualia, the "just a copy" argument, and related philosophical verbiage.
+
+3. Is lifelog uploading technically feasible?
+
+For a discussion on the feasibility of mind uploading in general, see [Goertzel, Ford, 2013][Sandberg, 2013][Hayworth, 2015]. Below we discuss the feasibility aspects that are specific to our approach.
+
+3.1. AGI is not required
+
+There are many definitions of artificial general intelligence (AGI), from informal anthropocentric to well-defined mathematical constructs. In this work, we define AGI as follows:
+AGI is a computable variant of AIXI that converges to optimal performance with the increase of compute.
+AIXI itself is both precisely defined and expected to be universal [Hutter, 2007]. For a review of computable variants of AIXI, see [Katayama, 2019].
+
+We argue that there is no need to wait for such AGI to successfully simulate a human mind. As Ben Goertzel pointed out, “humans are nowhere near the maximally generally intelligent system” [Goertzel, 2015].
+
+Firstly, the human brain is not Turing-complete, as it cannot simulate even simplest finite-tape Turing machines. As an exercise, the reader could try to simulate in his mind the smallest known universal Turing machine (Wolfram's 2,3), on a random tape of the length 100, for 100 steps (see [Wolfram, 2002] for the description of the machine).
+Thus, the set of programs that can be run on the human brain is vastly smaller than such set for a common laptop computer. Note: the energy consumption of the human brain is rather low in comparison (as one would expect from a system that has been optimized by the Darwinian evolution in an environment where available energy is scarce). The human brain can also sustain a significant mechanical damage without losing its function. Aside from these two (rather irrelevant) advantages, the human brain as a computational platform is inferior to today’s computers by any measure.
+
+Judging by the complexity of the known formal specifications for AGI (AIXItl, Gödel machines), it’s unlikely that the human brain is capable of running an AGI.
+
+Secondly, the human mind is a specialized software that is optimized for exactly two tasks: ensuring its own survival, and ensuring the replication of its own source code (genes). 
+Note: in some cases, human minds are not executing these tasks. Such cases are rather rare, and could be attributed to malware and/or bugs. Interestingly, some of the greatest achievements of mankind were achieved by such malfunctioning minds. Perhaps because their limited computational resources have been spent on less animalistic tasks.
+
+Judging by the rarity of intelligence in nature, a successful execution of the two tasks doesn’t require an AGI.
+
+One could argue that the human mind/brain is capable of solving some problems that are still hard for today’s computers. There is no surprise here: it’s indeed a nontrivial exercise to replicate the abilities of a neural network that was optimized by a genetic algorithm for millions of years. See also: “Moravec's paradox” [Moravec,1988].
+
+But, judging by the recent breakthroughs in machine learning, we can replicate and even surpass the brain’s abilities by throwing enough compute at carefully designed artificial neural networks. One notorious example is AlphaZero, who has achieved a superhuman performance on several highly complex games (go + chess + shogi) by learning the games from scratch [Silver et al, 2018]
+An equally impressive feat was achieved by links to STARTCART AI, who has learned to play Starcraft on the level of professional human players. The complexity of Starcraft could be compared to the complexity of commanding an actual armed force in real-life conditions.
+
+It’s therefore reasonable to assume that AGI is not required to produce a replica of the human mind. A specialized, less intelligent AI will suffice.
+Note: One could argue that the human intelligence is too weak / messy to build its own copy, and thus AGI is needed to accomplish such feat. Fortunately, minds can be aggregated into more intelligent computational systems (e.g. corporations, research labs etc).
+
+3.2. Trillions of parameters are not required
+
+The human brain contains about 10**11 neurons [Herculano, Kaas, 2011] and about 10**15 synapses (https://aiimpacts.org/scale-of-the-human-brain/).
+
+We need supercomputers just to emulate a neural network of such scale in real time, not to mention training it on the user’s data.
+
+Fortunately, a software with far smaller hardware requirements could produce a replica of the human mind. The following facts indicate that it’s indeed the case.
+
+Firstly, there is a tremendous amount of redundancy in the human brain (Lewin R. 1980. Is your brain really necessary? Science 210: 1232–1234).
+There are known cases of hydrocephalus where the patient has lost most of the brain tissue without losing the mental abilities we associate with the human mind (de Oliveira MF, Pinto FCG, Nishikuni K et al (2012) Revisiting hydrocephalus as a model to study brain resilience. Front Hum Neurosci 5:181.)
+
+In about 10% of patients with hydrocephalus, ventricle expansion fills 95% of the cranium, yet a half of such patients have IQ's greater than 100 [Lewin, 1980]
+Note: we were unable to find any estimates of the number of neurons in such extreme cases of hydrocephalus. Judging by rat models, the number of neurons could be unaffected, at least in some cases of hydrocephalus, thus rendering this part of our argument moot https://www.sciencedirect.com/science/article/pii/S0014488600975782
+
+If the human mind can be run on 5% of the brain volume, then the same 5% will suffice for the digital mind. Thus, there is no need to emulate the entire human brain: a far smaller neural network will suffice.
+
+Another interesting curiosity is Homo floresiensis, with the brain volume at least 2 times smaller than humans, yet capable of tool use etc.  
+On the other hand, paleontological evidence suggests that the behavioral modernity was achieved after the humans’ ancestors have gained the cranial capacity that is in the H.sapiens’ normal range.
+
+Secondly, some non-human hominids are almost as intelligent as humans. One example is the famous gorilla named Koko who was capable of a sign language, and scored between 70 and 90 on various IQ scales (see https://en.wikipedia.org/wiki/Koko_(gorilla))
+The brain of gorillas contains x3 less neurons than the human brain [Herculano, Kaas, 2011].
+
+Moreover, some animals have the intelligence comparable to the intelligence of hominids, while having orders-of-magnitude fewer neurons and synapses (some examples include: Gorilla gorilla, Pica pica, Octopus vulgaris, Apis mellifera, Portia labiata)
+
+Some manifestations of intelligence observed in some of the aforementioned taxons:
+Mirror self-recognition
+Metacognition (e.g. making accurate judgments about the strength of their own memories)
+Carrying tools for later use
+Tool manufacture (e.g. making a tool that could be carried for later use)
+Meta-tool use (using a tool that acts on another tool), sequential tool use
+Observational learning, social learning
+Episodic-like memory
+Comprehending the concept of object permanence
+Mentally rotating visual objects held in the working memory
+Counting objects
+Learning abstract concepts (e.g. “sameness” and “difference”)
+Having complex emotional states
+Playing
+Reasoning about casual relationships
+Improvising by trial and error, and then remembering the solution
+Planing ahead (e.g. detouring behavior that breaks visual contact)
+Imagining possible future events (prospection)
+Generalizing learned rules to apply them to novel situations and new cognitive domains
+Solving novel multi-step problems from the first try (indicates imagination)
+Recognizing familiar and unfamiliar individuals of the same species
+Distinguishing individuals of other species (e.g. gorillas distinguishing individual humans)
+Theory of mind (e.g. ability to see from the point of view of another individual and his desires)
+Communicating about things that are not immediately present (displacement)
+Cooperative hunting, foraging
+Using a language with syntactical grammar and a set of symbols
+
+The list is incomplete, as there are many manifestations of intelligence.
+
+Corvids (e.g. Magpie) have intelligence comparable to the intelligence of primates, while having 2 orders-of-magnitude fewer synapses. For a review on the cognitive abilities of corvids, see http://wexler.free.fr/library/files/emery%20(2004)%20the%20mentality%20of%20crows.pdf 
+Even jumping spiders (e.g. Portia) exhibit many traits that are commonly associated with intelligence, while having 5 orders-of-magnitude fewer synapses than humans.
+For a review on jumping spiders, see Wilcox, R. Stimson; Robert R. Jackson (1998). "Cognitive Abilities of Araneophagic Jumping Spiders"
+
+One could argue that we need trillions of parameters just to simulate all the imperfections and deficiencies of the human mind: cognitive biases, memory limitations, amorousness, credulity, tribal hatred etc. Fortunately, there is no need to simulate them at all, as it's not our goal to create a perfect replica of the human mind. A software superior to the human mind is an acceptable result too.
+If we want to copy the content of a DVD, there is no need to copy the preciese locations of its pits etc.
+
+How to ensure that mind uploading was successful?
+
+In the case of Theseus uploading, there is a straightforward way to confirm that the process was successful:
+Memorize a long string of numbers. Generate a hash of the string (e.g. SHA-512) and write it down.
+Perform the mind uploading. The neurons of your brain are gradually replaced with virtual neurons of the same functionality. After the end of the procedure, your mind resides in a computer.
+Recall the string you memorized at the step #1. Generate the SHA-512 again. If your new hash is identical to the old hash, then your digital mind is the same mind. As no one else knows the string you memorized, it's the only realistic possibility.
+
+Unfortunately, we can’t use the same test for the lifelog uploading, as we must upload memories in a verbalized form. But we can still ensure that the mind uploading was successful.
+
+Tech-savvy readers may have already encountered the problem of comparing two complex software programs (e.g. Android vs. iOS). To solve the problem, a variation of this technique is sometimes used (https://sdtimes.com/evaluation/guest-view-five-steps-evaluating-selecting-software-tools/):
+list all features you deem important
+assign a weight for each feature in the list
+rate the implementation of the feature in each program
+calculate the overall score for each program by summing up the ratings multiplied by the weights
+We can use the same technique to compare a human mind and its digital replica.
+
+Initially, the score will be subjective and inexact. But its quality can be improved iteratively - by experimental work. For example, if we find out that replicas with deviating political views exhibit a behavior that is too different from the original mind, then we increase the weight of political views in the score.
+
+
+How accurate should be the replica to be accurate enough? In other words, how high should be the replica’s score to consider it a success?
+
+Human minds are changing over time. 20 years ago, I’ve had fundamentally different political views, a different set of skills, interests, memories etc. Yet I consider myself the same person, in spite of the fact that there is no real continuity between the current and the old version of my mind. In my case, the continuity was broken by a general anesthesia, not to mention the thousands of breaks for sleeping.
+
+
+What if I have a replica that is closer to my mind than the 20-years-younger-me? In this case, it’s reasonable to assume that the replica is accurate enough.
+
+Instead of 20 years, one may choose another age difference, but the principle is the same:
+calculate the score for the older version of yourself
+if the replica’s score is higher, then the mind uploading is a success
+
+A cautious person may be reluctant to rely on such a semi-subjective metric. But there is no need to bet your life on it, as the proposed mind-uploading approach is both nondestructive and compatible with any other life extension technique. It can also be experimentally verified, e.g. by comparing the replica with a replica created by the means of Theseus uploading.
+
+One may consider it as a worthy wager: in the case of complete failure, the result will be a useful digital assistant; in the case of success, the result will be immortality.
+
+4. Is lifelog uploading feasible in praxis?
+
+If my arguments are correct, the “Lifelog uploading” could be the shortest path towards mind uploading, or even towards radical life extension in general.
+On the one hand, it doesn’t need massive funding and governmental support to succeed (unlike anti-aging research).
+On the other hand, Agile-style incremental development and near-term commercialization are possible, allowing the project to become financially self-sustaining (unlike other approaches to mind uploading).
+On the third hand, it’s purely a software project that can be realized by a small team of enthusiasts or even by a lone researcher.
+
+
+Lifelog uploading and cryonics
+
+Lifelog uploading is instrumental for some other radical life extension approaches. For example, even an imperfect replica of a human mind can play a crucial role in cryonics.
+
+A cryo patient who has left behind some data about his mind (memoirs, biography etc) has a higher chance of a successful reanimation. And the more data are available, the higher is the chance.
+
+There are 3 reasons for it.
+
+Firstly, such data could be useful in verifying the quality of the whole process. In the simplest case, we could ask the reanimated patient if he remembers his mother's name etc.
+
+Secondly, the data could be useful in filling out the gaps in the patient's mind. As both the cause of the "death" and the freezing process damage the brain, it's inevitable that some of the patient's mind will be damaged too. Using the preserved digital data, we could be able to repair some or all of the damage.
+
+Thirdly, in hard cases (e.g. a straight freeze after a week of rotting), Lifelog uploading could be the only reanimation option. The more data we have for the uploading, the better will be the digital reconstruction of the patient's mind.
+
+The goal will be to maximize the likeness of the reconstructed digital mind to the mind of the patient. The more information we'll manage to get about the patient's mind, the more precise will be the reconstruction.
+For example, the perfectly-cryopreserved Joe could be 99% identical to the original Joe.
+The straight-frozen Joe could be 87% identical.
+The reconstructed-from-Google-data Joe - 56%
+The reconstructed-from-memoirs Joe - 23%.
+etc etc.
+
+If we get enough processing power, we could run millions of randomly modified versions of Joe. The more versions we run, the higher is the probability that one of them will be close enough to the original Joe.
+
+We don't even need to choose between the versions, as they could all live simultaneously.
+
+
+
+
+One of the advantages if our approach is that it' useful for other approaches to life extension.
+
+For anti-aging
+
+A sufficiently advanced (even sub-AGI) replica of a gerontologist could provide an orders-of-magnitude speed up to anti-aging research, as such replica could be replicated ad infinitum.
+
+The same could be done for other life extension fields of research, including direct mind uploading and nano-medicine.
+
+For cryonics
+
+We don't need a perfect replica either.
+
+…
+
+we surmise thst there is no need to copy the imperfections of the human mind. Uploading the memories, preferences and other individual attributes of the particular mind will suffice.
+
+Compare: to build a flying machine, there is no need to replicate all the unecessary complexity of a bird.
+
+
+It's not our goal to perfectly replicate the human mind. A software superior to the human mind is an acceptable result to. NOTE:
+Of course, we're not just building an AGI, but uploading the human mind of a particular individuum. Thus, we must ensure that the resulting software is excibiting enough traits of the said individuum. And such traits might or might not include the deficiencies of the individuum's mind.
+
+Using the same methaphor:
+the manner of flight of our machine should preserve enough traits of the flight of the bird we're trying to replicate.
+
+It's reasonable to assume that replciating the defficiencies of the human mind is not necessary to achieve such feat.
+
+
+One could argue that our expected result is just a fancy chat-bot
+just a fancy AI, with no real qualia / consicousnes / soul behind it.
+Fortunatelly, there are no such things in the human brain either. You, the reader, are just a fancy AI, a simple software running on a biological computer.
+A software that can be uploaded, dublicated and modfied, given suitable tools.
+you, our dear reader, is also nothing but a fancy AI.
+If such idea is contradicting your self-image, then your self-image is false.
+
+
+A thought experiment.
+
+1. We run several instances of your uploaded mind in parallel.
+
+2. As all the instances can correctly recall the memorized string of numbers, and only the original mind knows the string, all of them are the original mind.
+
+3. If you give them different outputs, they will eventually diverge, but immediately after the launch they're all the same mind. If you regularly synchronize the instances, they'll remain the same mind as long as you want.
+
+4. It's therefore theoretically possible that several instances of your mind could exist simultaneously. As there are million instances of Windows XP (all of them - Windows XP), so could exist million instances of your mind (all of them - you).
+
+If you agree with the conclusions of these thought experiments, you must agree that a reconstructed mind of a deceased person could be the same mind, not "just a copy".
+
+I present you two strings:
+1010110110111110
+1010110110111110
+As you noticed, they're identical.
+Is one of them a "copy" of another?
+For all practical purposes, it doesn't matter. They're the same data.
+As your mind is nothing but data, it's the same situation with "copies" of your mind.
+It doesn't matter how they were created, and who was the first one, as long as they're identical.
+
+
+
+The piety for the human mind is missplaced, as most people mistake the horrible mess of the human brain for a divine compexity
+1) Without deep understanding of the inner workings of the brain, we may miss something. And because of it, even a very accurate digital replica of the mind could be damaged in some subtle way.
+2) For the reconstruction of a historical personality (say, Antonie van Leeuwenhoek), we must reconstruct not only his mind, but also his historical environment to live in.
+3) The best way to upload a mind is to do it gradually (e.g. by digitizing neurons one by one), thus ensuring the mind's continuity.
+
+
+
+As the first orbital space flight has nullified the phylosophies of the Earth's form, so will the first mind uploading nullify the phylosophies of mind.
+We expect the that the first mind uploading will have the same effect on the phylosophy of mind, as the progress in biological science has nullified the phylosophy of vitalism
+
+
+As Ben Goertzel put it: the possibility of mind uploading is a failrly direct extrapolation from evidence, while the objections to mind uploading are grasping at straws in order to find some barely plausible and rational lines of argument that would depict mind uploading as impossible. Source: https://www.youtube.com/watch?v=gZChqb_VldA
+
+
+Future directions of research:
+Data collection
+Longterm data storage
+Building the AIs on the data
+Building the environment for the AIs to operate in
+The concrete next steps for each
+Simple recollection of the available data. E.g. “where have I been at 2019.02.18 11:45 ?”, “show me the screen-shots from my notebook from the same time”
+Chat-bots
+
+
+There are two main factors that could slow-down such project:
+
+the tech factor: maybe AGI is needed to create a sufficiently accurate digital replica of a human mind
+it’s unlikely, as the human intelligence is less general than AGI.
+
+the psychological factor: many baseline humans have psychological barriers that prevent them from thinking clearly about mind uploading. e.g. “it’s only my copy, not me”, “my mind can’t exist in two places at once” and similarly shallow objections
+
+In 2013 Ben Goertzel has suggested that we could iteratively build closer and closer approximations to the brain of a person as a way to upload said person: https://www.youtube.com/watch?v=gZChqb_VldA
+
+
+We argue that no scientific or technical breakthroughs are required for mind uploading, and we could already start doing it in 2019.
+
+And we could get rough mind uploads today.
+
+There are several science-based ways to radically extend the human life. One of them is to transfer the human mind from the brain to a better, artificial substrate. The hypothetical procedure is known as mind uploading. For a general introduction, see https://en.wikipedia.org/wiki/Mind_uploading
+
+
+If the reader thinks that he has a new and original argument against mind uploading, he's most likely wrong. There is a high probability that the said argument has been already refuted at least a decade ago.
+
+
+At the moment of this writing, the situation with mind uploading bears some similarities with the situation of heavier than air flight in the 19th century: most philosophical and scientific arguments against it were refuted long time ago, but the idea remains controversial among non-specialists, and will remain controversial till the first flight / uploading will take place.
+
+We haven't yet reverse-engeenered brain not because of its supposed super-natural complexity, but because it's a horrible mess.
+
+
+If two instances of a software are identical, then its meaningless to say that one of them is a mere "copy" of another.
+
+All identical instances of Windows XP are the same Windows XP. Its also true for identical instances of a human mind. For all practical purposes, they have the same worth, regardless of who of them was the first one (and regardless of how they percieve their own worth).
+
+
+
+Can we get enough of the user's data to build a good enough replica of his mind?
+
+
+As neurobiologist Suzana Herculano-Houzel pointed out... "The remarkable, yet not extraordinary, human brain as a scaled-up primate brain "
+
+Its conceivable that the smartest of human minds can be emulated on a today's budget smartphone in real time.
+
+
+to achieve our goal, the neural network for the replica should be as small as possible (but not smaller) - to avoid overfitting.
+
+Using trillions of parameters for it could indeed be to much, even if the brain itself has trillions of parameters.
+See, for example, this lecture on overfitting for a good introduction of the topic: https://www.youtube.com/watch?v=EQWr3GGCdzw&list=PLD63A284B7615313A&index=11
+To ovoid overfitting, the complexity of our model should correspond to the the amount of data, not to the complexity of the target function.
+
+
+The complexity of the model should match the size and the complexity of the training dataset, not the complexity of target function.
+
+To avoid overfitting, the complexity of the model should match the size and the complexity of the training dataset, not the complexity of target function.
+
+Even in the ideal case where we record 100% of the inputs and the ouputs of the human brain for 120 years, a model with 10^15 parameters will like to be an overkill
+
+
+We don't argue that the we use only 10% of our brain (it's a long debunked myth). We argue that the human brain is highly inefficient. It's likely to be possible to build an order-of-magntidues smaller brain with the same functionality.
+
+
+If you collect decades worth of data and train the massive neural network on it, will the result be YOU? There is only one way to find out - try it.
+
+In the best case, you'll have your mind uploaded.
+
+In the worst case, you'll have enough data to verify the quality of your cryo-preservation.
+
+
+
+Low-tech partial mind uploading that is already available today
+
+The impressive success of artificial neural networks (esp. deep learning) suggests 3 interesting things:
+
+1) No “magic” (soul, qualia, quantum trickery etc) is required for a human-level intelligence to function. The only thing you need is a large-enough network of primitives performing simple calculations (like artificial neural networks)
+
+2) It's possible to emulate a human mind using such networks (because your mind is running on one of such networks right now)
+
+3) One practical way to create such networks is collecting a lot of input/output data and train a similar network on it.
+
+It means, there is already a way to upload your mind, at least partially:
+
+a) collect all the input that your brain receives
+
+b) collect all the output that your brain generates
+
+c) if you collect it long enough, you'll have enough data to train an artificial neural network that will generate the same output as your brain on the same input.
+
+If you ask such network that is your favorite food (or any other question about you), it will usually provide the correct answer, and it will behave in the same ways as you in the same situations. The network will be a close approximation of your mind. And the more data you feed into the network, the more YOU it will become.
+
+It will require enormous resources to train such network. But you can start the process of uploading today, even on your laptop. The only thing you need to do now is to start collecting the data about yourself, and keep it in a safe place.
+
+
+I allow my data to be used:
+- for reconstruction, technological resurrection of my personality, my mind, etc.
+- for mind reconstruction experiments
+- for creating new, modified, and never before existing minds
+- for creating artificial intelligences of any kind
+- for creating hive minds
+- for creating historical simulations, including game simulations
+- for digital archeology
+
+
+Recently, I’ve discovered the article “Declarative Consciousness for Reconstruction”. It was a turning point in my life, as for the first time I was able to see a clear, realistic path towards mind uploading (my passion since the childhood).
+Since then, I’m working in 3 relevant domains:
+1) LifeLog data collection domain:
+- I’ve wrote a decent logger for Linux (my main OS) that records regular screenshots, keyboard and mouse movements, and saves them in a highly compressed form using zpaq
+- wrote a geolocation logger for Android, and working on expanding it with audio and other sensors input
+After I finish them, I plan to release them under a Creative Commons license. 
+2) Supplementary brain preservation disciplines domain:
+I’ve created a massive list of the scientific articles that are directly relevant for cryonics, complete with short summaries of their findings. Can be found on Github by searching “SPTCR: curated repository of scientific papers on cryonics”.
+3) Some theoretical work-in-progress:
+- on reconstruction of recurrent neural networks from partially known inputs and outputs
+- an article with the working title “Is whole brain emulation necessary for mind uploading?” (a comparison of the 4 main mind uploading approaches).
+
+
+
+In my opinion, there is no cryonics preservation quality threshold. 
+My reasoning is as follows.
+1) It's unlikelly that today's cryonics patients will ever be revived in the same sense as the Fahy's kidney was revived. Too much damage. 
+Instead, I expect that their minds will be digitally reconstructed, using the partially preserved brain as one of the data sources.
+2) The quality of the digital reconstruction will mostly depend on 3 factors: 
+The quality of the brain preservation, the quality of the mind file, and the available computational resources. 
+3) insufficient quality of reconstruction can be compensated by utilizing more of computational resources. 
+E.g if no data is preserved on the political preferences of the patient, run several instances of the patient's mind with different political preferences.
+For each bit of the missing info, the amount of the necessary computational resources increases by x2.
+For a very well-preserved brain, a single instance of the emulated patient's mind could suffice, and the required compute could be relatively small.
+For a brain after a month of warm ishemia, many millions instances could be necessary, requiring a planet-sized mashine to simulate them.
+If technological progress continues (another important assumption of cryonics), I would expect that every single cryopatient eventually can be brought to life. Thus, any cryonics is better than no cryonics.
+
+The data about the patient's mind could play an important role in all revival scenarios, at minimum to verify the quality of the entire freezing / reconstruction process.
+
+Some old-fashioned people will prefer to be revived in the same leaking meatsacks.
+And it's ethical to respect their preference in this regard.
+But I consider the digital reconstruction as the most realistic revival scenario, at least for the patients preserved with the crude tech of today.
+I expect that every single pre-2019 patient will be digitally reconstructed, and only then downloaded into a meatsack (if it's their wish).
+Future advances in cryobiology may allow a more direct (or even a purely biological) revival. But for the older, highly damaged patients, I see no other way.
+
+
+One could argue that a digitally reconstructed mind will like an an artist's impression gazing at your frozen brain.
+It's a good summary of how it will be. The "artist" may be a superhuman artificial intelligence, and "gazing" may include a comparative analysis of millions of scanned brains, but the essence is the same. 
+Will it work at all? I don't know. 
+I'm also unaware of any more realistic approach to revival of pre-2019 patients.
+In general, it's a good idea to avoid this entire process by not dying. Or, at least, by living long enough to see a purely biological reversible cryonics (if such thing is possible in adult humans).
+
+
+ 
+There is a relativelly simple way to check if the digitally reconstructed mind is still you:
+1. Memorize a long sequence of random numbers. 
+2. Write it down and store it in a secure place.
+3. Become cryopreserved.
+4. Upon revival, check if the memorized sequence is identical to the written one.
+5. By the experiment's design, no one else knows the sequence but you. Therefore, if the sequences are identical, the revived person is most likely - you.
+To improve the quality of the experiment, one can utilize an asymmetric cryptography for it. E.g. memorize a wallet private key of some quantum-resistant cryptocurrency.
+
+
+It's a good idea to have some mind copies, regardless of how you resolve the "mind copy" problem.
+The copy is me? Cool, I've tricked death.
+The copy is not me? Still cool, there is someone who will continue to work on my projects (one of which is to bring all people ever lived back to life).
+
+There is no need to dispose the body after the digital reconstruction of the patient's mind.
+After it's refurbished, the patient could utilize it as a mind backup storage, or as an additional body to run an instance of his mind on it. Alternatively, they could simply preserve it in LN2 for nostalgic reasons.
+
+
+It would be nice to avoid the described digital reconstruction process, and the potential mind-copy issue. 
+Unfortunately, for the pre-2019 patients, it seems to be unavoidable.
+As no one has attempted to repair in situ the Antikythera mechanism (and for good reasons!), so no one will attempt to repair in situ the highly damaged brain of an early cryopatient. 
+The later patients could have more luck, as advances in cryobiology could allow a purely biological revival in the likeness of the Fahy's kidney experiments.
+
+
+
+
