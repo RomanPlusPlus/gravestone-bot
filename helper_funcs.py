@@ -33,8 +33,10 @@ sf.tests(get_absolute_path)
 
 # takes file_type in the form like ".txt"
 def recursive_file_search(*args):
-    try:
+    try:              
+        #print("---3----")
         path, file_type = args
+        #print("---4----")
         files = [f for f in glob.glob(path + "**/*" + file_type, recursive=True)]
         if len(files) == 0:
             path = get_absolute_path(path)

@@ -9,7 +9,7 @@ import self_awareness as sf
 
 input_folder = "input_texts/"
 
-debug_mode = "normal"  # can be "verbose", "normal", "off"
+debug_mode = "off"  # can be "verbose", "normal", "off"
 
 if debug_mode == "verbose":
     print(
@@ -20,7 +20,7 @@ interface_texts = {
     "hint": "Hint: write 'more' if you want to hear more on the topic. write 'exit' to exit. or just ask any "
             "question. \n",
     "topic_change": "Sorry, i cant remember anything about it. lets change the topic. a random thought:  \n",
-    "hi": "\nHi! I'm an instance of the mind of Roman S. Lets talk! If you want to stop, simply type exit\n"
+    "hi": "\n...ok, I'm now ready to great you. Greatings! :-) I'm an instance of the mind of Roman S from the ancient year of 2020. Lets talk! If you want to stop, simply type exit\n"
 }
 
 

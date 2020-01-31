@@ -39,6 +39,8 @@ def load_answered_qs(answers_path):
             st = aq_strings[i].strip()
             if st[0:2] == "Q:":
                 answered.append(st[3:])
+    else:
+        print("no such file as", answers_path)
     return answered
 
 
@@ -54,12 +56,13 @@ def save_answer(answer, question, first_answer7):
         with open(path2answers, 'a') as f:
             if first_answer7:
                 f.write(faq_tag + "\n")
-            f.write("q: " + question + "\n_a: " + answer + "\n")
+            f.write("Q: " + question + "\nA: " + answer + "\n")
 
 
 def select_question(all_questions):
     # try to find an unanswered
     answered = load_answered_qs(path2answers)
+    print("\nAnswered:", len(answered), "of", len(all_questions), "\n")    
     found = False
     c = 0
     good_q_s = ""
@@ -77,8 +80,13 @@ def select_question(all_questions):
 
 
 # load questions
-with open(path2questions) as f:
-    q_strings = f.readlines()
+#with open(path2questions) as f:
+#    q_strings = f.readlines()
+    
+import questions_unpack as qun
+q_strings = qun.recover("to_memory", path2questions)     
+#print("-------\nloaded these many questions:",  len(q_strings))  
+    
 for i in range(len(q_strings)):
     temp_s = q_strings[i].strip()
     q_strings[i] = temp_s

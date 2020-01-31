@@ -593,3 +593,68 @@ The later patients could have more luck, as advances in cryobiology could allow 
 
 
 
+in the event of a (inevitable) pandemic, the vast majority of dying cryonicists will suffer permadeath. It means, cryonicists need a backup option. One backup option I can think of is mind uploading and its surrogates. 
+
+We don't know enough about the human mind to conclusively resolve the jaded "not me - just a copy" dispute. 
+It's safe to say that with some unknown probability, and under some conditions, the uploaded mind is indeed you. People who religiously oppose mind uploading believe that the probability is zero. But I wouldn't be so certain. Thus, it's the same probability game as with cryonics. If you have enough resources for it, it's worth doing.
+
+The same could be said about surrogates of mind uploading. For example, if you preserve enough digital data about a person, it could be possible in the future to reconstruct the person's mind from it.
+
+For all people who don't oppose the idea of mind uploading, I would recommend to use the described method as a backup option to cryonics.
+
+
+A minor modification of the gradual uploading experiment: instead of artificial neurons made of atoms, we use digital ones. For example, after the hippocampus is done, there is now a functionally identical virtual hippocampus on PC, connected to the rest of the biological brain.
+
+The most interesting part starts after you replaced the last of your biological neurons with an artificial one. The entirety of your brain is now digital. And it's undoubtedly you. What happens if you copy it? What if you synchronise the copies, so they can regularly share memories etc? What if you synchronise only once per 10 years? 1000 years? What if you merge two unrelated minds? 
+
+After such tech emerges, our ideas of self-identity and personhood will quickly become outdated. 
+
+
+
+
+It's not about coping with fears or something. Death is an engeenering problem, not a childhood monster.
+
+The idea of digital mind reconstruction is based on two facts: 1) your brain is a data-processing machine. E.g. you take this email as an input, and produce an answer as an output. 2) It's possible to create a machine that will write your  answer given the same email. And the next 10 answers. And everything you ever wrote or thought about.
+
+It's not just some hypotheticals. There are already simple AIs that could emulate the style of Rembrandt or Nietzsche, by learning from their works.
+
+The best part of the idea of mind reconstruction, is that we can test it: 1) collect all writings of some person. 2) train a sufficiently advanced AI on the data. 3) ask the AI questions that it has never seen before, and check how the answers compare to the answers of the carbon-based version of the person. If no one (including the carbon-based version) can quess the authorship of the answers correctly, then we have 2 instances of the said person. Success!
+
+The experiment could be doable in a few decades. Meanwhile, the data preservation is the main priority.
+
+
+
+One of the most wonderful properties of artificial neural networks (ANN) is that they can generalize and infer hidden information from their inputs. 
+
+For example, a few years ago, were there headlines about an ANN that could guess sexual orientation of a person by looking at their photo. I've heard that some gay people can do the same trick, thus it's not unrealistic. So, even if you have never said anything about your sexual orientation, it could be inferred by a machine, using seemingly unrelated pieces of information.
+
+It could be true for other hidden states of your mind. E.g. people who quote Dostoevsky are more likely to question their life achievements. 
+
+Alternativelly, given enough computational power, it'a possible to reconstruct all your hidden mental states - by simulating all possible variants and combinations of them. E.g: gay Ivan, straight Ivan, bisexual Ivan, gay Ivan who likes cats, gay Ivan who dislikes cats etc
+
+In general, many people in the field suffer from an unhealthy obsession with the complexity of the human mind/brain. They percieve it as an unfathomable alien artifact, vastly superior to anything humanity will ever be able to create. They are wrong. 
+
+The human mind/brain is a work of the blind idiot of biological evolution. It means, the brain is a horribly organized mess of outdated ad-hoc engeenering solutions and randomness.  It's has not the complexity of an unfathomable alien artifact, but the complexity of a junk pile.
+
+I strongly suspect that the entire mind of, say, Dostoevsky, with all its deepness, self-awareness, emotion and creativity, can be emulated on a $50 smartphone.
+
+
+
+as an example of the current capabilities of AI, I'll generate a few sentences on the topic using OpenAI's GPT-2: We are at the birth of the big data era of AI, but in the context of interest, very little is actually known about how fast and accurate ANNs are. You may be excited by ANNs, but it does not mean that they will solve all problems or become the next Internet. Here are some of the most challenging problems in AI today. All are very hard, and all require vast amounts of data to train. 1. AI that not only takes our speech, but understands the content. So much of the jobs of SRS have already been taken over by computers, but voice recognition is still the biggest challenge, not only in computer assisted speech recognition, but also voice processing (voice synthesis) in modern companies, and lots of fields.
+
+
+
+
+
+for most people, the idea of digital mind reconstruction is even more shocking than the idea of mind uploading. In this regard, cryonics is superior to the both. 
+
+As for which one is more realistic and scientifically sound, is hard to say. 
+To some limited extend, the reversible cryopreservation of humans already works (e.g. embryos). 
+The same could be said about the digital mind reconstruction (e.g. the OpenAI GPT-2 cited in the previous email). 
+
+To the people who want to learn more about the scientific research on the topic, I would recommend to start with the Whole Brain Emulation Roadmap by Anders Sandberg and Nick Bostrom.  
+
+I personally think that digital mind reconstruction is a viable backup option for cryonics. 
+If, for whatever reason, your cryopreservation fails, the preserved digital data could still allow the preservation of your mind. And the more data is preserved, the higher is the chance that such backup option could actually work.   
+
+
