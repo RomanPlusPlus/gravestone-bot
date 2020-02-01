@@ -62,7 +62,7 @@ def save_answer(answer, question, first_answer7):
 def select_question(all_questions):
     # try to find an unanswered
     answered = load_answered_qs(path2answers)
-    print("\nAnswered:", len(answered), "of", len(all_questions), "\n")    
+    print("\nAnswered:", len(answered), "of", len(all_questions), "\n")
     found = False
     c = 0
     good_q_s = ""
@@ -80,13 +80,14 @@ def select_question(all_questions):
 
 
 # load questions
-#with open(path2questions) as f:
+# with open(path2questions) as f:
 #    q_strings = f.readlines()
-    
+
 import questions_unpack as qun
-q_strings = qun.recover("to_memory", path2questions)     
-#print("-------\nloaded these many questions:",  len(q_strings))  
-    
+
+q_strings = qun.recover("to_memory", path2questions)
+# print("-------\nloaded these many questions:",  len(q_strings))
+
 for i in range(len(q_strings)):
     temp_s = q_strings[i].strip()
     q_strings[i] = temp_s

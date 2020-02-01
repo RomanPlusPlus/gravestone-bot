@@ -964,7 +964,7 @@ def get_answer_from_found_question(*args):
 
 sf.tests(get_answer_from_found_question)
 
-
+# returns a boolean (faq_answer_exist7) and a rstr
 def get_fa_qanswer(*args):
     fallback_output = False, None
     res = False, None

@@ -1,5 +1,3 @@
-
-
 debug_mode = "off"  # can be "verbose", "semiverbose", "normal", "off"
 
 
@@ -10,6 +8,8 @@ def check_own_existance(*args):
     else:
         i_exist = "I may or may not exist."
     return i_exist
+
+
 # covered by tests
 
 
@@ -17,33 +17,34 @@ if __name__ == "__main__":
     print(check_own_existance())
     print("\nBy the way, you should launch launcher.py, not me :)\n")
 else:
-    print("Please wait a moment. I'll run a quick self-diagnostics, and then try to collect my thoughts together...") 
+    print("Please wait a moment. I'll run a quick self-diagnostics, and then try to collect my thoughts together...")
+
 
 def deleteFile(*args):
     res = "the function itself failed"
     try:
         filepath = args[0]
         if isinstance(filepath, str):
-        #import helper_funcs as hf            
-        #    print("commensing files deletion in "+dirPath+" , exten = ", exten)
-        #rest_of_path, name_and_ext  = os.path.split(filepath)
-        #print("rest_of_path:\n" + rest_of_path, "\nname_and_ext:\n" + name_and_ext)    
-        #print("---1--")
-        #flist_before = hf.recursive_file_search(rest_of_path, ".txt")
-        #flist_before = hf.recursive_file_search("/input", ".txt")
-        #print("---2--")
-        #print("flist_before", flist_before)
-        
+            # import helper_funcs as hf
+            #    print("commensing files deletion in "+dirPath+" , exten = ", exten)
+            # rest_of_path, name_and_ext  = os.path.split(filepath)
+            # print("rest_of_path:\n" + rest_of_path, "\nname_and_ext:\n" + name_and_ext)
+            # print("---1--")
+            # flist_before = hf.recursive_file_search(rest_of_path, ".txt")
+            # flist_before = hf.recursive_file_search("/input", ".txt")
+            # print("---2--")
+            # print("flist_before", flist_before)
+
             import os
             file_existed_before = False
             if os.path.isfile(filepath):
                 file_existed_before = True
-                os.remove(filepath)            
-            file_exists_after =  os.path.isfile(filepath)
-         
-            if  file_existed_before:
-                if  file_exists_after:
-                    res = "deletion failed"   
+                os.remove(filepath)
+            file_exists_after = os.path.isfile(filepath)
+
+            if file_existed_before:
+                if file_exists_after:
+                    res = "deletion failed"
                 else:
                     res = "success"
             else:
@@ -51,20 +52,21 @@ def deleteFile(*args):
                     res = "something horrible happened"
                 else:
                     res = "no file to delete"
-                        
-        #else:
+
+        # else:
         #    res = "bad input"
-        #flist_after = hf.recursive_file_search(rest_of_path, ".txt")
-        #print("flist_after", flist_after)
-        #print("--5---")
-    
-        #deleted_fset = ""
-        #res = set(flist_before).difference(set(flist_after))
-        #print(deleted_fset)
+        # flist_after = hf.recursive_file_search(rest_of_path, ".txt")
+        # print("flist_after", flist_after)
+        # print("--5---")
+
+        # deleted_fset = ""
+        # res = set(flist_before).difference(set(flist_after))
+        # print(deleted_fset)
     except Exception as e:
         if debug_mode == "verbose":
             print("deleteFile:", e)
     return res
+
 
 def str2(*args):
     res = ""
@@ -83,7 +85,7 @@ def str2(*args):
                 res = str(any_input)
     except Exception as e:
         if debug_mode == "verbose":
-            print("str2:", e)                
+            print("str2:", e)
     return res
 
 
@@ -103,22 +105,22 @@ def lists_equal7(*args):
         res = False
         if debug_mode == "verbose":
             print(e)
-    return res        
-   
+    return res
+
 
 # todo: make the by_element comparison work with all iterables 
 def equal(input1, input2):
     res = True
     if isinstance(input1, list) and isinstance(input2, list):
         if not lists_equal7(input1, input2):
-            res = False        
+            res = False
     else:
-        #if isinstance(input1, str) and isinstance(input2, str):
-            #if len(input1) != len(input2):
-                #res = False
-                # print("Strings of different lenghts: ", str(len(input1)), str(len(input2)))
-                # for j in range(min(len(input1), len(input2))):
-                # print(input1[j], input2[j])
+        # if isinstance(input1, str) and isinstance(input2, str):
+        # if len(input1) != len(input2):
+        # res = False
+        # print("Strings of different lenghts: ", str(len(input1)), str(len(input2)))
+        # for j in range(min(len(input1), len(input2))):
+        # print(input1[j], input2[j])
         if type(input1) == type(input2):
             if input1 != input2:
                 res = False
@@ -129,15 +131,12 @@ def equal(input1, input2):
     return res
 
 
-
 def a_is_in_b(a, b):
     res = False
     for element in b:
         if equal(a, element):
             res = True
     return res
-
-
 
 
 def check_if_elements_of_same_type(input1, input2):
@@ -162,7 +161,6 @@ def check_if_elements_of_same_type(input1, input2):
     return res
 
 
-
 # input1 = ("", 2)
 # input2 = ("4$//^4")
 # print(check_if_elements_of_same_type(input1, input2))
@@ -170,15 +168,15 @@ def check_if_elements_of_same_type(input1, input2):
 
 def check_several_norm_outputs(test_res, output4normal):
     sev_res = ""
-    if not a_is_in_b(test_res, output4normal):        
+    if not a_is_in_b(test_res, output4normal):
         sev_res += "    normal arguments return unexpected results. test_res not in output4normal. test_res:\n" + str2(
             test_res) + "\n"
         sev_res += "output4normal:\n" + str2(output4normal)
-    return  sev_res  
-    
-    
-def check_additional_io_pairs(func, additional_io_pairs):  
-    additional_res = "" 
+    return sev_res
+
+
+def check_additional_io_pairs(func, additional_io_pairs):
+    additional_res = ""
     for i in range(len(additional_io_pairs)):
         norm_args_variant = additional_io_pairs[i][0]
         expected_output = additional_io_pairs[i][1]
@@ -190,16 +188,16 @@ def check_additional_io_pairs(func, additional_io_pairs):
     return additional_res
 
 
-
 def check_normal_types(test_res, output4normal):
     types_res = ""
     if not check_if_elements_of_same_type(test_res, output4normal):
         types_res += "The results of the normal input are of unexpected type: expected " + str(
             type(output4normal)) + ", but got " + str(type(test_res))
-    return types_res    
-    
-    
-def check_main_normals(func, normal_args_list, several_normal_outputs7, check_only_types_in_normal_output, output4normal):
+    return types_res
+
+
+def check_main_normals(func, normal_args_list, several_normal_outputs7, check_only_types_in_normal_output,
+                       output4normal):
     main_res = ""
     test_res = func(*normal_args_list)
     if several_normal_outputs7:
@@ -211,27 +209,24 @@ def check_main_normals(func, normal_args_list, several_normal_outputs7, check_on
             else:
                 main_res += "    normal arguments return unexpected results. results:\n" + str2(
                     test_res) + "\n_expected result:\n" + str2(output4normal) + "\n"
-    return main_res        
-
-
+    return main_res
 
 
 def check_normal_inputs(func, normal_args_list, output4normal, several_normal_outputs7,
-               additional_io_pairs, check_only_types_in_normal_output):
+                        additional_io_pairs, check_only_types_in_normal_output):
     normal_res = ""
     try:
-        normal_res += check_main_normals(func, normal_args_list, several_normal_outputs7, check_only_types_in_normal_output, output4normal)
+        normal_res += check_main_normals(func, normal_args_list, several_normal_outputs7,
+                                         check_only_types_in_normal_output, output4normal)
         if additional_io_pairs is not None:
-            normal_res += check_additional_io_pairs(func, additional_io_pairs)                        
+            normal_res += check_additional_io_pairs(func, additional_io_pairs)
     except Exception as e:
         normal_res += "    normal arguments cause an Exception: " + str(e) + "\n"
-    return normal_res            
- 
+    return normal_res
 
 
-
-def check_specific_wrongs(func, specific_wrong_io, check_only_types_in_wrong_output):      
-    specific_str = ""                            
+def check_specific_wrongs(func, specific_wrong_io, check_only_types_in_wrong_output):
+    specific_str = ""
     spec_wrong_in = specific_wrong_io[0]
     spec_wrong_o = specific_wrong_io[1]
     test_res = func(*spec_wrong_in)
@@ -243,12 +238,11 @@ def check_specific_wrongs(func, specific_wrong_io, check_only_types_in_wrong_out
                 specific_str += "The specific wrong argument defined in tests returned an output(s) of wrong type(s)"
         else:
             specific_str += "The specific wrong argument defined in tests returned unexpected result: \n" + \
-                 str(test_res) + "\n_expected result:\n" + str(spec_wrong_o) + "\n"
-    return specific_str    
+                            str(test_res) + "\n_expected result:\n" + str(spec_wrong_o) + "\n"
+    return specific_str
 
 
-
-def generate_wrong_inputs(func, normal_args_list):   
+def generate_wrong_inputs(func, normal_args_list):
     wrong_args0 = []
     wrong_args1 = []
     wrong_args2 = []
@@ -267,9 +261,7 @@ def generate_wrong_inputs(func, normal_args_list):
             print(func.__name__ + " : Forgot to wrap the normal arguments as a list?")
     else:
         wrong_args2.append(dict())
-    return wrong_args0, wrong_args1, wrong_args2              
-  
-  
+    return wrong_args0, wrong_args1, wrong_args2
 
 
 def check_wrong_types(output4wrong, test_res0, test_res1, test_res2):
@@ -278,13 +270,11 @@ def check_wrong_types(output4wrong, test_res0, test_res1, test_res2):
     temp_b1 = check_if_elements_of_same_type(test_res1, output4wrong)
     temp_b2 = check_if_elements_of_same_type(test_res2, output4wrong)
     if not temp_b0 or not temp_b1 or not temp_b2:
-        w_types_s += "A wrong argument returned an output(s) of wrong type(s)"    
-    return w_types_s                
-          
+        w_types_s += "A wrong argument returned an output(s) of wrong type(s)"
+    return w_types_s
 
-                                                                               
-                                     
-def check_fall_through(wrong_args0, wrong_args1, wrong_args2, test_res0, test_res1, test_res2):     
+
+def check_fall_through(wrong_args0, wrong_args1, wrong_args2, test_res0, test_res1, test_res2, output4wrong):
     fall_str = ""
     passed = False
     if len(wrong_args0) > 0:
@@ -301,91 +291,87 @@ def check_fall_through(wrong_args0, wrong_args1, wrong_args2, test_res0, test_re
         fall_str += "    arguments of wrong type return unexpected results. 3 test results: \n" + str(
             test_res0) + "\n" + str(test_res1) + "\n" + str(test_res2) + "\n_expected result:\n" + str(
             output4wrong) + "\n. A valid first input could also be an output in this case"
-    return fall_str                                  
+    return fall_str
 
 
-
-                                              
 def get_func_outputs(func, wrong_args0, wrong_args1, wrong_args2):
     #   print(wrong_args)
     test_res0 = func(*wrong_args0)
     test_res1 = func(*wrong_args1)
     test_res2 = func(*wrong_args2)
-    return test_res0, test_res1, test_res2     
-                                                                                                                                                                                                                                                                                    
+    return test_res0, test_res1, test_res2
 
 
-def check_generated_wrongs(func, first_input_may_return_as_output_if_fail, check_only_types_in_wrong_output, normal_args_list, output4wrong):
-    gen_str  = ""
+def check_generated_wrongs(func, first_input_may_return_as_output_if_fail, check_only_types_in_wrong_output,
+                           normal_args_list, output4wrong):
+    gen_str = ""
     try:
-        wrong_args0, wrong_args1, wrong_args2 = generate_wrong_inputs(func, normal_args_list)    
-        test_res0, test_res1, test_res2 = get_func_outputs(func, wrong_args0, wrong_args1, wrong_args2)                 
-        
+        wrong_args0, wrong_args1, wrong_args2 = generate_wrong_inputs(func, normal_args_list)
+        test_res0, test_res1, test_res2 = get_func_outputs(func, wrong_args0, wrong_args1, wrong_args2)
+
         if not equal(test_res0, output4wrong) or not equal(test_res1, output4wrong) or not equal(test_res2,
                                                                                                  output4wrong):
             if first_input_may_return_as_output_if_fail is False:
-                if check_only_types_in_wrong_output:                    
-                    gen_str += check_wrong_types(output4wrong, test_res0, test_res1, test_res2)                                                                
+                if check_only_types_in_wrong_output:
+                    gen_str += check_wrong_types(output4wrong, test_res0, test_res1, test_res2)
                 else:
                     gen_str += "    arguments of wrong type return unexpected results. 3 test results: \n" + str(
                         test_res0) + "\n" + str(test_res1) + "\n" + str(test_res2) + "\n_expected result:\n" + str(
                         output4wrong) + "\n"
-            else:                
-                gen_str += check_fall_through(wrong_args0, wrong_args1, wrong_args2, test_res0, test_res1, test_res2)
+            else:
+                gen_str += check_fall_through(wrong_args0, wrong_args1, wrong_args2, test_res0, test_res1, test_res2,
+                                              output4wrong)
     except Exception as e:
         print(e)
     return gen_str
 
 
-
-
-def check_wrong_inputs(func, normal_args_list, output4wrong, first_input_may_return_as_output_if_fail, specific_wrong_io,
-               check_only_types_in_wrong_output):
-                                                     
+def check_wrong_inputs(func, normal_args_list, output4wrong, first_input_may_return_as_output_if_fail,
+                       specific_wrong_io,
+                       check_only_types_in_wrong_output):
     # print("finished checking normal args")
     wrong_str = ""
     try:
         # wrong_args = normal_args
         if specific_wrong_io is not None:
             wrong_str += check_specific_wrongs(func, specific_wrong_io, check_only_types_in_wrong_output)
-        wrong_str += check_generated_wrongs(func, first_input_may_return_as_output_if_fail, check_only_types_in_wrong_output, normal_args_list, output4wrong)                                                                
+        wrong_str += check_generated_wrongs(func, first_input_may_return_as_output_if_fail,
+                                            check_only_types_in_wrong_output, normal_args_list, output4wrong)
     except Exception as e:
         wrong_str += "    arguments of wrong type cause an Exception: " + str(e) + ".\n"
 
-    return wrong_str                                    
-
-
+    return wrong_str
 
 
 def check_func(func, normal_args_list, output4normal, output4wrong, several_normal_outputs7=False,
                additional_io_pairs=None, first_input_may_return_as_output_if_fail=False, specific_wrong_io=None,
                check_only_types_in_wrong_output=False, check_only_types_in_normal_output=False):
     res_str = ""
-    
+
     func_name = ""
     try:
         func_name = func.__name__
         if debug_mode in ["verbose", "semiverbose"]:
             print("\nTesting ", func_name)
     except Exception as e:
-        print(e)      
-        
+        print(e)
+
     if debug_mode in ["verbose", "semiverbose"]:
-        print("...normal inputs check")            
+        print("...normal inputs check")
     res_str += check_normal_inputs(func, normal_args_list, output4normal, several_normal_outputs7,
-               additional_io_pairs, check_only_types_in_normal_output)
-               
+                                   additional_io_pairs, check_only_types_in_normal_output)
+
     if debug_mode in ["verbose", "semiverbose"]:
-        print("...wrong inputs check")            
-    res_str += check_wrong_inputs(func, normal_args_list, output4wrong, first_input_may_return_as_output_if_fail, specific_wrong_io,
-               check_only_types_in_wrong_output)
-                    
+        print("...wrong inputs check")
+    res_str += check_wrong_inputs(func, normal_args_list, output4wrong, first_input_may_return_as_output_if_fail,
+                                  specific_wrong_io,
+                                  check_only_types_in_wrong_output)
+
     if res_str != "":
         intro_str = func.__name__ + " is not working properly: \n"
         res_str = intro_str + res_str + "\n"
         if debug_mode != "off":
             print(res_str)
-
 
 
 # generate data for tests
@@ -1407,6 +1393,31 @@ def reconstruct_mind_tests(func):
             print(e)
 
 
+def skip_question_tests(func):
+    r_strings = get_rstr_list4tests()
+    input_rstr = r_strings[0]
+    ldic = get_lexicon_dic4tests()
+    from model_string_with_ref import string_with_ref as rstr
+    forgotten = rstr("sorry. i cant remember...", "default", -1, {"sorry", "i", "cant", "remember"}, [], -1, "")
+
+    qa_strings = get_rstr_list4tests()
+    qa_strings[0].text = "Q: Your name?"
+    qa_strings[1].text = "A: Roman"
+    q_rstr = qa_strings[0]
+    a_rstr = qa_strings[1]
+
+    normal_args_list = [input_rstr, r_strings, ldic]
+    output4normal = forgotten, "forgotten"
+    several_normal_outputs7 = False
+    additional_io_pairs = [[[q_rstr, qa_strings, ldic], (a_rstr, "answer")]]
+    first_input_may_return_as_output_if_fail = False
+
+    output4wrong = forgotten, "forgotten"
+
+    check_func(func, normal_args_list, output4normal, output4wrong, several_normal_outputs7, additional_io_pairs,
+               first_input_may_return_as_output_if_fail)
+
+
 def get_absolute_path_tests(func):
     relative_path = "res/self-diagnostics/res/test-commons.txt"
 
@@ -1590,23 +1601,23 @@ def tests_tests(func):
     check_func(func, normal_args_list, output4normal, output4wrong, several_normal_outputs7, additional_io_pairs,
                first_input_may_return_as_output_if_fail)
 
+
 def check_own_existance_tests(func):
     normal_args_list = []
-    output4normal =  "I think, therefore I am."
+    output4normal = "I think, therefore I am."
     several_normal_outputs7 = False
     additional_io_pairs = []
     first_input_may_return_as_output_if_fail = False
     output4wrong = "I think, therefore I am."
     check_func(func, normal_args_list, output4normal, output4wrong, several_normal_outputs7, additional_io_pairs,
                first_input_may_return_as_output_if_fail)
-    
+
 
 def deleteFile_tests(func):
-    
     dpath = "res/self-diagnostics/del_tests/file for deletion.txt"
     with open(dpath, "w") as df:
         df.write("File for deletion tests. Should be deleted if the tests are succesful")
-    
+
     normal_args_list = [dpath]
     output4normal = "success"
 
@@ -1617,29 +1628,28 @@ def deleteFile_tests(func):
     check_func(func, normal_args_list, output4normal, output4wrong, several_normal_outputs7, additional_io_pairs,
                first_input_may_return_as_output_if_fail)
 
-    
+
 def str2_tests(func):
     normal_args_list = [["world", "peace"]]
     output4normal = "[\nworld\npeace\n]"
     several_normal_outputs7 = False
-    additional_io_pairs = [[[("digital", "immortality")],  "digital\nimmortality\n"], [[True], "True"]]
+    additional_io_pairs = [[[("digital", "immortality")], "digital\nimmortality\n"], [[True], "True"]]
     first_input_may_return_as_output_if_fail = True
     output4wrong = ""
     check_func(func, normal_args_list, output4normal, output4wrong, several_normal_outputs7, additional_io_pairs,
                first_input_may_return_as_output_if_fail)
-    
 
-def lists_equal7_tests(func):    
+
+def lists_equal7_tests(func):
     normal_args_list = [[1, 2], [1, 3]]
     output4normal = False
     several_normal_outputs7 = False
-    additional_io_pairs = [ [[[1, 3], [1, 3]], True] ,  [[[1, 2, 3], [1, 2]], False]]
+    additional_io_pairs = [[[[1, 3], [1, 3]], True], [[[1, 2, 3], [1, 2]], False]]
     first_input_may_return_as_output_if_fail = False
     output4wrong = False
     check_func(func, normal_args_list, output4normal, output4wrong, several_normal_outputs7, additional_io_pairs,
                first_input_may_return_as_output_if_fail)
-                            
-                                                                        
+
 
 # -----------------------------                                                                                                                                     
 
@@ -1698,6 +1708,7 @@ def get_funcs_dict():
             format_answer_tests,
             answer_to_request_tests,
             reconstruct_mind_tests,
+            skip_question_tests,
             get_absolute_path_tests,  # this and below are for helper_funcs.py
             recursive_file_search_tests,
             extract_all_zips_tests,
@@ -1717,7 +1728,6 @@ def get_funcs_dict():
             deleteFile_tests,
             str2_tests,
             lists_equal7_tests
-
         ]
         #################################
 
@@ -1769,15 +1779,15 @@ tests(str2)
 tests(lists_equal7)
 tests(equal)
 tests(a_is_in_b)
-tests(check_if_elements_of_same_type)    
-tests(check_several_norm_outputs)    
-tests(check_additional_io_pairs)    
-tests(check_normal_types)    
+tests(check_if_elements_of_same_type)
+tests(check_several_norm_outputs)
+tests(check_additional_io_pairs)
+tests(check_normal_types)
 tests(check_main_normals)
 tests(check_normal_inputs)
-tests(check_specific_wrongs)  
-tests(generate_wrong_inputs)                                                                            
-tests(check_wrong_types)            
+tests(check_specific_wrongs)
+tests(generate_wrong_inputs)
+tests(check_wrong_types)
 tests(check_fall_through)
 tests(get_func_outputs)
 tests(check_generated_wrongs)

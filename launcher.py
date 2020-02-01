@@ -128,8 +128,18 @@ def get_rtsr_additions(*args):
                     faq_marking_addition.append("q")
                 else:
                     faq_marking_addition.append("a")
-            else:
-                faq_marking_addition.append("")
+            else:  # file has no faq tag
+                # trying to extract faq markings even if not tagged as faq
+                extracted_marking = ""
+                if j < len(non_empty_l) - 1:
+                    st_next = non_empty_l[j + 1]
+                    if st[0:2] == "Q:" and st_next[0:2] == "A:":
+                        extracted_marking = "q"
+                if j > 0:
+                    st_prev = non_empty_l[j - 1]
+                    if st[0:2] == "A:" and st_prev[0:2] == "Q:":
+                        extracted_marking = "a"
+                faq_marking_addition.append(extracted_marking)
             counter_addition += 1
         res = r_strings_addition, faq_marking_addition, counter_addition
     except Exception as get_rtsr_additions_e:
@@ -373,6 +383,24 @@ def get_compendium_answer(*args):
 sf.tests(get_compendium_answer)
 
 
+# if it's a question marked as "Q:", get the answer to the question
+def skip_question(*args):
+    res = get_cant_remember_rstr(), "forgotten"
+    try:
+        rstr, rstrings_l, lex_d = args[0:3]
+        if rstr.text[0:2] == "Q:":
+            next_rstr = get_next_rstr(rstr, rstrings_l, lex_d)
+            if next_rstr.text[0:2] == "A:":
+                res = next_rstr, "answer"
+    except Exception as e:
+        if debug_mode == "verbose":
+            print(e)
+    return res
+
+
+sf.tests(skip_question)
+
+
 def get_faq_or_compendium_answer(*args):
     res = get_cant_remember_rstr(), "forgotten"
     log = ""
@@ -403,13 +431,18 @@ def get_faq_or_compendium_answer(*args):
             relevance_type = "from faq"
         else:
             answer_r_str, relevance_type = get_compendium_answer(rstrings_l, lexicon_d, plurals_d, user_request)
+
+        rstr_after_skip, rtype = skip_question(answer_r_str, rstrings_l, lexicon_d)
+        if rtype == "answer":
+            answer_r_str = rstr_after_skip
+
         res = answer_r_str, relevance_type
     except Exception as ge:
         res = get_cant_remember_rstr(), "forgotten"
         log += str(ge)
     if debug_mode == "verbose":
         print(log)
-
+    # print(relevance_type)
     return res
 
 
@@ -549,6 +582,7 @@ while True:
     #    user_request = "are you real?"
     #    user_request = "what is your name?"
     #    user_request = " how old are you"
+    # user_request = "Are we living in a simulation?"
 
     if user_request == "exit":
         print("\nSee you later!")

@@ -1,4 +1,4 @@
-<parseAsFAQ>
+<parse_as_faq>
 Q: Are we living in a simulation?
 A: It's possible. But I think it's unlikely. And it's almost always better to assume that the world you're living in is real.
 Q: Are you afraid?
