@@ -19,7 +19,7 @@ We plan to iteratively expand the Bot’s capabilities, to make the conversation
 This software and the sample texts are under very permissive Creative Commons Zero v1.0 Universal licence (basically, it describes a release into the Public Domain). 
 
 ## 1. How to use it 
-### 1.0. Running the bot with sample texts
+### 1.0. Running the bot with the sample texts
 
 Linux:
 
@@ -31,7 +31,7 @@ Linux:
 
 The bot was tested on Ubuntu 16.04 and Python 3.7.3. 
 
-### 1.1. Creating a bot with your texts
+### 1.1. Creating a bot with your own texts
 
 0. convert your texts to .txt. The bot is tailored to English language, but other languages may work too.  
 1. ensure that the encoding is UTF-8
