@@ -5,7 +5,7 @@ from linguistic_engine import clean_r_str_list, get_most_relevant_r_str, extract
 from linguistic_engine import generate_lexicon, convert_lexicon2sorted_string, get_rarest_known_word
 from linguistic_engine import get_next_rstr, check_if_faq, bind_faq
 from linguistic_engine import get_fa_qanswer, singulate_r_str_list, get_cant_remember_rstr
-import self_awareness as sf
+import self_awareness as sf # the coolest sounding import you've ever seen, isn't it?
 
 input_folder = "input_texts/"
 
